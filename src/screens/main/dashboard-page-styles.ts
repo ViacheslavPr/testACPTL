@@ -48,6 +48,16 @@ export const Table = styled.table`
     min-height: 48px;
     text-align: left;
   }
+  
+  .cell {
+    &-right {
+      text-align: right;
+    }
+    
+    &-action {
+      width: 110px;
+    }
+  }
 
   .header {
     &__sort {
@@ -177,4 +187,34 @@ export const SpinnerContainer = styled.div`
       opacity: 0;
     }
   }
+`
+
+export const ActionIcon = styled.img`
+  width: 20px;
+  height: 20px;
+  opacity: 80%;
+  
+  :hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+`
+
+export const ButtonContainer = styled.span`
+  display: flex;
+  align-items: center;
+`
+export const ButtonAdd = styled.button`
+  
+`
+
+export const FormInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+`
+
+export const FormErrorMessage = styled.div`
+  color: red;
+  font-size: 12px;
 `

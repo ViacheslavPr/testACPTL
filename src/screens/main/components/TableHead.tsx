@@ -48,6 +48,7 @@ const TableHead: React.FC<ITableHead> = ({ handleOnClickSort }) => {
       </th>
       }
     )}
+    <th className="cell-right cell-action">Действие</th>
   </tr>
   </thead>
 }
